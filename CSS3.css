@@ -1,0 +1,42 @@
+body 
+{
+    background-color: #ffffe6;
+    border:10px solid #668cff;
+    padding-top: 20;
+    padding-left: 20;
+    padding-right: 20;
+    padding-bottom: 10;
+    
+}
+
+ h1
+    {
+        text-align:left;
+        color: #668cff;
+        font-family:sans-serif;
+        font-weight: normal;
+    }
+
+
+  a 
+    {
+  color: #668cff;
+        text-decoration: none;
+}
+
+.hr1
+{
+    border:gray 1px solid;
+}
+
+h2
+{
+    font-size: 30;
+    text-decoration: bold;
+    color: #5c5c3d;
+}
+
+p,li
+{
+    color:#5c5c3d;
+}
