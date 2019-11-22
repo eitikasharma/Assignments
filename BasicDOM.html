@@ -1,0 +1,70 @@
+<html>
+<head>
+    <style>
+    body
+        {
+            border: 2px solid blue;
+            padding: 20px;
+            background-color: darkslategrey;
+        }
+
+    #textBox
+        {
+            width:200px;
+            height:25px;
+            font-family: cursive;
+            text-align: center;
+            background-color: darkgray;
+            border: 1px solid black;
+            color:white;
+        }
+    #btn
+        {
+            width:100px;
+            color:dodgerblue;
+            background-color: darkgray
+            font-size:18px;
+            font-weight: bolder;
+        }
+    #list
+        {
+           color:white;
+            font-size:15px;
+            font-family: cursive;
+        }    
+    </style>
+</head>    
+    
+<body>
+    <input type="text" id="textBox" placeholder="Enter Text ">
+    <button id="btn" >Click Me</button>
+    <ul id="list">
+        
+    </ul>
+    <script>
+        
+        var a=document.getElementById('textBox')
+        console.log(a)
+        
+        var b=document.getElementById('btn')
+        console.log(b)
+        
+        b.addEventListener('click',testCall)
+        
+        function testCall()
+        {
+            var lis=document.getElementById('list') 
+            var dat=document.createElement('li')
+            dat.textContent=a.value
+            lis.appendChild(dat)
+            
+            var but=document.createElement('Button')
+            but.textContent='Delete'
+            lis.appendChild(but)
+            console.log(lis)
+        }
+        
+    </script>    
+    
+</body>    
+</html>    
